@@ -4,15 +4,32 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+I'm a Full-Stack Engineer that has experience leading projects since its architectural conception to its deployment to production. Prone to analyze code metrics and provide an observability solution to increase performance on development time and achieve reliable monitoring while on production.
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+# Skills
+- Java
+- Spring Framework
+- Apache Tomcat
+- Scala
+- Play Framework
+- Maven
+- Gradle
+- sbt
+- Python
+- PostgreSQL
+- MongoDB
+- RabbitMQ
+- Javascript
+- NodeJS
+- Angular2
+- Docker
+- Kubernetes
+- Jenkins
+- HTML
+- CSS
+- SASS
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
-
-
-[jekyll-organization]: https://github.com/jekyll
+# Languages
+- Spanish: native language
+- English: advance
+- Japanese: beginner
