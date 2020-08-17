@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- META DATA -->
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- TITLE OF SITE -->
+	<title>Geardo Cortes - Resume / CV / Portfolio </title>
+
+	<!-- favicon -->
+	<link id="favicon" rel="icon" type="image/png" href="assets/images/favicon.ico">
+
+	<!-- Google Fonts-->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,600,700,800,900%7CPoppins:300,400,500,600&display=swap">
+
+	<!-- Bootstrap css -->
+	<link rel="stylesheet" href="assets/css/bootstrap.css">
+
+	<!-- splitlayout.css -->
+	<link rel="stylesheet" href="assets/css/animations.css">
+
+	<!-- slick css -->
+	<link rel="stylesheet" href="assets/css/slick.css">
+	<link rel="stylesheet" href="assets/css/slick-theme.css">
+
+	<!-- magnific-popup.css -->
+	<link rel="stylesheet" href="assets/css/magnific-popup.css">
+
+	<!-- font-awesome.min.css -->
+	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+	<link rel="stylesheet" href="assets/css/pe-icon-7-stroke.min.css">
+
+	<!-- Main style css -->
+	<link rel="stylesheet" href="assets/css/style.css">
+
+	<!-- Responsive css -->
+	<link rel="stylesheet" href="assets/css/responsive.css">
+
+	<!-- Main Color -->
+	<link rel="stylesheet" href="assets/css/color.css">
+
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+
+<body class="small_menu">
+	<div id="page" class="site">
+
+		<!--Start Preloader-->
+		<div class="page-loader startLoad">
+			<div class="loader startLoad"></div>
+		</div>
+		<!--End Preloader-->
+
+		<div id="splitlayout" class="splitlayout close-right">
+			<div class="intro">
+
+				<div class="side side-left" style="background-image: url(assets/images/home_personal.jpg);">
+					<!--Start Home-->
+					<div class="home_type full-height home__menu">
+						<div class="overlayer text-center">
+							<div class="container">
+								<div class="display-table">
+									<div class="display-table-cell">
+										<h1 class="fit__text">I'm <span id="typed"></span></h1>
+										<div id="typed-strings">
+											<span>Gerardo Cortes</span>
+											<span>Sr Engineer</span>
+											<span>from Costa Rica</span>
+										</div>
+										<div class="more_info">
+											<a href="assets/docs/Gerardo-Cortes_Resume.pdf" target="_blank" class="bgColor">download CV</a>
+											<a href="#contact" target="_self" class="goToSec">contact me</a>
+										</div><!--.more_info-->
+									</div><!--.display-table-cell-->
+								</div><!--.display-table-->
+							</div>
+						</div><!--.overlayer-->
+					</div><!--.home_type-->
+					<!--End Home-->
+				</div><!--.side-->
+
+
+
+				<!--Start Menu-->
+				{% include menu.html %}
+				<!--End Menu-->
+			</div><!-- /intro -->
+
+
+
+			<div class="pag-e page-right">
+				<div id="pt-main" class="pt-perspective page-inner">
+
+
+					<!--Start About Section-->
+					{% include about.html %}
+					<!--End About Section-->
+
+
+					<!--Start Resume Section-->
+					{% include resume.html %}
+					<!--End Resume Section-->
+
+
+					<!--Start Services Section-->
+					{% include services.html %}
+					<!--End Services Section-->
+
+
+					<!--Start Portfolio Section-->
+					{% include portfolio.html %}
+					<!--End Portfolio Section-->
+
+
+					<!--Start Blog Section-->
+					{% include blog.html %}
+					<!--End Blog Section-->
+
+
+					<!--Start Contact Section-->
+					{% include contact.html %}
+					<!--End Contact Section-->
+
+
+				</div><!--.page-inner-->
+			</div><!--.page-right-->
+		</div><!--.splitlayout-->
+	</div><!-- #page -->
+
+
+	<script src='assets/js/jquery.min.js'></script>
+	<script src='assets/js/jquery.matchHeight-min.js'></script>
+	<script src='assets/js/modernizr-custom.js'></script>
+	<script src='assets/js/pagetransitions.js'></script>
+	<script src='assets/js/typed.min.js'></script>
+	<script src='assets/js/slick.js'></script>
+	<script src='assets/js/bootstrap.min.js'></script>
+	<script src='assets/js/imagesloaded.pkgd.min.js'></script>
+	<script src='assets/js/isotope.pkgd.min.js'></script>
+	<script src='assets/js/jquery.fittext.js'></script>
+	<script src='assets/js/jquery.magnific-popup.min.js'></script>
+	<!-- Google maps -->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCABUipchxBy5ubGg0ajToD30sX9KhcCBQ"></script>
+	<script src='assets/js/custom.js'></script>
+
+</body>
+
+</html>

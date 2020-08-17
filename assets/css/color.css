@@ -1,0 +1,96 @@
+	/*Main Color #4980E6 #7CA7F5*/
+
+	input[type="submit"].btn,
+	input[type="submit"],
+	.small_menu .active_item,
+	.small_menu .menu_list a:hover,
+	.cats a,
+	.home_type #typed,
+	.social-icons a:hover,
+	.mob-menu .menu-title,
+	.resume .date span,
+	.testimonials .arrows span:hover,
+	.services .font-icon i,
+	.fun-facts span,
+	.fun-facts h4:after,
+	.portfolio_sec .ul-filter li.active_filter,
+	.portfolio_sec  .item .info p,
+	.project_info span,
+	.portfolio_sec .item .info i,
+	.blog .item p,
+	.blog .item h3 a:hover,
+	.contact .contact-info .icon,
+	.contact .contact-info p a:hover,
+	.entry-meta a:hover,
+	.entry-content a:not(.btn):not(.wp-block-button__link),
+	.entry-header .entry-title a:hover,
+	.entry-footer .tags-links a:hover,
+	.share-post li a:hover,
+	.post-nav a:hover,
+	.comment-reply a,
+	.comment-reply span,
+	.comment-content a {
+	    color: #7CA7F5 !important;
+	}
+
+	.sec_title h2:after,
+	#about .my__img_content:after,
+	.home_type .more_info a:not(.bgColor):hover,
+	.home---line,
+	.home_type .more_info a.bgColor,
+	.skills .skill .progress_bar,
+	.resume .date:after,
+	.resume .date:before,
+	a.rslides_nav.rslides1_nav:hover,
+	.services .font-icon i:after,
+	.resume .date span:after,
+	.blog .item p:after,
+	.blog .blog__img:after,
+	.info span.icon:after,
+	.portfolio_sec .item .info i:after,
+	li.active_filter:after,
+	input[type="submit"].btn:hover,
+	input[type="submit"]:hover,
+	a.btn:hover,
+	button.btn:hover,
+	input[type="submit"].btn:active,
+	input[type="submit"]:active,
+	a.btn:active,
+	button.btn:active,
+	input[type="submit"].btn:before,
+	input[type="submit"]:before,
+	.contact .contact_form .submit:hover,
+	header.entry-header:after {
+	    background-color: #7CA7F5;
+	}
+
+	input[type="submit"].btn,
+	input[type="submit"],
+	a.btn,
+	button.btn,
+	h3.subtitle,
+	.contact .contact_form .submit,
+	.side-right .home-lines .home-line,
+	.home_type .more_info a:not(.bgColor):hover,
+	.home_type .more_info a.bgColor,
+	.testimonials .arrows span:hover,
+	.form-control:focus,
+	.contact .contact_form .submit:hover,
+	form.post-password-form input[type="password"]:focus,
+	form.post-password-form input[type="submit"]:active,
+	form.post-password-form input[type="submit"]:focus {
+	    border-color: #7CA7F5;
+	}
+
+	.resume .date span:before,
+	.entry-footer .tags-links a:hover:before {
+		border-right-color: #7CA7F5;
+	}
+
+	.menu_list .home-item svg:hover {
+    	fill: #7CA7F5;
+	}
+
+	g.Header {
+    	stroke: #7CA7F5;
+	}
