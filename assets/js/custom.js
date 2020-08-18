@@ -344,26 +344,29 @@ jQuery(function ($) {
         return false;
       }
 
-      var data_string = $('.contact form').serialize();
+      var data_string = $('.contact form').serializeJSON();
 
-
-      $.ajax({
-        type: "POST",
-        url: $('.contact form').attr('action'),
-        data: data_string,
-
-        success: function (message) {
-          console.log(message);
-          if (message === 'SENDING') {
-            $('.msg_success').fadeIn('slow');
-          } else {
-            $('.msg_error').fadeIn('slow');
-          }
+      fetch($('.contact form').attr('action'), {
+        method: 'POST',
+        body: data_string,
+        headers: {
+          'Content-Type': 'application/json'
         },
-        error: function(message) {
+        redirect: "error"
+      })
+      .then(function(response){
+        return response.json();
+      })
+      .then(function(jsonResponse){
+        if(jsonResponse.error){
           $('.msg_error').fadeIn('slow');
+        } else {
+          $('.msg_success').fadeIn('slow');
         }
-
+        console.log(jsonResponse);
+      })
+      .catch(function(error) {
+        $('.msg_error').fadeIn('slow');
       });
 
       return false;
