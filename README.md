@@ -1,7 +1,8 @@
 # cortes-gerardo.github.io
 _Resume / Portfolio / Blog_
+
 ## Description
-This is a personal static site using [Jekyll](https://jekyllrb.com/) to showcase my _Resume / Portfolio / Blog_, you can see the result at [cortes-gerardo.com](http://cortes-gerardo.com)
+This is a personal static site using [Jekyll](https://jekyllrb.com/) to showcase my _Resume / Portfolio / Blog_, you can see the result at mi site [cortes-gerardo.com](http://cortes-gerardo.com)
 
 ---
 

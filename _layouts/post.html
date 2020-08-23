@@ -32,28 +32,28 @@ layout: main
 
 							<!-- .post-thumbnail -->
 							<div class="post-thumbnail">
-								<img src="assets/images/blog/blog-documentation.jpg" alt="" />
+								<img src="/assets/images/blog/{{page.thumbnail}}" alt="" />
 							</div>
 
 							<div class="container">
 								<article class="post">
 									<header class="entry-header">
 										<div class="cats">
-											<span>Photo by <a href="https://unsplash.com/@beatriz_perez?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Beatriz Pérez Moya</a> on <a href="https://unsplash.com/s/photos/documents?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+											<!-- <span>Photo by <a href="https://unsplash.com/@beatriz_perez?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Beatriz Pérez Moya</a> on <a href="https://unsplash.com/s/photos/documents?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span> -->
 											<!-- <a href="#">Media</a> -->
 										</div>
 
-										<h2 class="entry-title">How to write a good README</h2>
+										<h2 class="entry-title">{{page.title}}</h2>
 
 										<div class="entry-meta">
 											<span class="byline">
 												<span class="author vcard">
 													<span>By: </span>
-													<a href="#">Gerardo Cortés</a>
+													Gerardo Cortés
 												</span>
 											</span>
 											<span class="posted-on">
-												<a href="#">Aug 12, 2020</a>
+												{{page.date | date_to_long_string}}
 											</span>
 										</div>
 										<!-- .entry-meta -->
@@ -62,67 +62,7 @@ layout: main
 									<!-- .entry-header -->
 
 									<div class="entry-content">
-										<h3>A quick anecdote</h3>
-										<p>Our company has a staff restructure, and I ended up in the department with the most projects to maintain. When I naively grab a "simple" story to familiarise myself with an API, I notice that the README only said README, and my nightmare began... It didn't have any documentation.</p>
-										<p>I asked one of my peers who should know about that API, everything that I couldn't find by looking at the code, and for all my questions, I heard an "I don't know" only one person worked in that project, and it wasn't available anymore.</p>
-										<p>So the simple story transforms itself into an existential crisis about What was the propose of the API? How do we know it was working correctly? Where was located in the virtual realm of servers? And, if nobody knows about it, Can I delete it?</p>
-										<blockquote>"Documentation is like sex: when it is good, it is very, very good; and when it is bad, it is better than nothing."<footer>Dick Brandon</footer></blockquote>
-										<h3>What goes into the documentation?</h3>
-										<p>Keep in mind that people access your documentation, usually for three different reasons:</p>
-										<ul>
-											<li>Local Development</li>
-											<li>Deployment and Monitoring</li>
-											<li>Test and Troubleshooting</li>
-										</ul>
-										<p>Local development not only means being able to run the project locally, but you also need to provide the project's context, common terminology, and general guidance on how to contribute.</p>
-										<p>Let your clients know how they can test your functionality, which exceptions they should be aware of, and the expected behavior.</p>
-										<p>Lastly, ensure everyone is clear about how to deploy to production and keep it that way, providing access to the tools needed for that: the pipeline, dashboards, alerting mechanisms, and access to the logs.</p>
-										<h3>The README cheat sheet</h3>
-										<h4>README.md</h4>
-										<pre class="prettyprint">
-											# Project Title
-											## Description
-											![img/screenshot](#)
-											## Contributing
-											# Getting Started
-											## Prerequisites
-											## Local Development
-											## Local Tests
-											# API Reference *
-											# Deployment
-											# Authors
-
-											# Acknowledgements
-										</pre>
-										<h4>CONTRIBUTING.md</h4>
-										<pre class="prettyprint">
-											# How to contribute
-
-											## Code Style
-											guidelines
-
-											## Pull requests
-
-											## Report issues
-										</pre>
-										<h4>API.md</h4>
-										<pre class="prettyprint">
-											# Project Title
-											## Description
-											## Screenshots
-											## Code Style
-											# Getting Started
-											## Prerequisites
-											## Local Development
-											## Local Tests
-											# API Reference *
-											# Deployment
-											# Authors
-											# Acknowledgements
-										</pre>
-										<h3>Takeaways</h3>
-										<p>Documentation makes your project a living being, capable of growing and improving itself without your intervention.</p>
-										<p>Think about how you want to inherit an old project and what knowledge you need to make a successful change in production. So, unless you test your documentation with someone else, you will not know what is missing, listen to the questions, and answer them in the README.</p>
+										{{content}}
 									</div>
 									<!-- .entry-content -->
 
@@ -138,10 +78,10 @@ layout: main
 													<div class="share-post">
 														<span class="shareText">Share:</span>
 														<ul class="share-post list-unstyled">
-															<li><a href="#" target="_blank" class="fa fa-facebook"></a></li>
-															<li><a href="#" target="_blank" class="fa fa-twitter"></a></li>
-															<li><a href="#" target="_blank" class="fa fa-linkedin"></a></li>
-															<li><a href="#" target="_blank" class="fa fa-pinterest"></a></li>
+															<li><a href="https://www.facebook.com/sharer/sharer.php?u={{site.url}}{{page.permalink}}" target="_blank" class="fa fa-facebook"></a></li>
+															<li><a href="https://twitter.com/home?status={{site.url}}{{page.permalink}}" target="_blank" class="fa fa-twitter"></a></li>
+															<li><a href="https://www.linkedin.com/shareArticle?mini=true&url={{site.url}}{{page.permalink}}&title={{page.title}}&summary={{page.summary}}" target="_blank" class="fa fa-linkedin"></a></li>
+															<li><a href="https://pinterest.com/pin/create/button/?url={{site.url}}{{page.permalink}}&media=&description={{page.summary}}" target="_blank" class="fa fa-pinterest"></a></li>
 														</ul>
 													</div>
 												</div>
