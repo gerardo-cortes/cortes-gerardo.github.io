@@ -11,7 +11,8 @@ This is a personal static site using [Jekyll](https://jekyllrb.com/) to showcase
 - [Docker](https://www.docker.com/): Instead of having to install Ruby and all the gems, I prefer to use docker to keep my PC clean.
 
 ### Local Development
-For compiling and running the server localy you need to excecute this line
+For compiling and running the server locally you need to execute this line
+
 ```shell
 # navigate into the project directory
 cd cortes-gerardo.github.io
@@ -22,9 +23,9 @@ docker run --rm --name jekyll --volume="$PWD:/srv/jekyll" -p 8080:4000 -it jekyl
 the server will be running in [localhost:8080](http://localhost:8080/)
 
 ### Code Style
-This project works mostly by editting [Markdown](https://jekyllrb.com/docs/configuration/markdown)
+This project works mostly by editing [Markdown](https://jekyllrb.com/docs/configuration/markdown)
 
-For commits, I recomend to use the following [git-styleguide](https://udacity.github.io/git-styleguide/)
+For commits, I recommend to use the following [git-styleguide](https://udacity.github.io/git-styleguide/)
 
 ---
 
